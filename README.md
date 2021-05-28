@@ -13,8 +13,12 @@ $ packer build -only docker.xnat17 xnat-web.pkr.hcl
 # Build all docker images
 $ packer build -only docker.* xnat-web.pkr.hcl
 
-# push images to local repository
+# push images to a repository
 $docker push localhost:32000/xnat-web:1.8.1-dev
+or 
+$docker push cerds/xnat-web:1.8.1-dev
+
+
 ```
 
 Reference:
